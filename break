@@ -1,0 +1,12 @@
+
+        println!("{}", display.join(" "));
+
+        if display.join("") == secret_word {
+            println!("Congratulations, you've guessed the word!");
+            break;
+        }
+
+        if guesses_left == 0 {
+            println!("Sorry, you've run out of guesses. The word was {}.", secret_word);
+            break;
+        }
